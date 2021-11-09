@@ -1,2 +1,1 @@
-# aurora.go
-Aurora Engine client for Go
+# Aurora Engine client for Go
