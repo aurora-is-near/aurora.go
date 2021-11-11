@@ -2,13 +2,13 @@ package types
 
 // FungibleTokenMetadata contains metadata for NEP-141 fungible tokens
 type FungibleTokenMetadata struct {
-	Spec           string
-	Name           string
-	Symbol         string
-	Icon           *string
-	Reference      *string
-	Reference_hash *[]uint8
-	Decimals       uint8
+	Spec          string
+	Name          string
+	Symbol        string
+	Icon          *string
+	Reference     *string
+	ReferenceHash *[]uint8
+	Decimals      uint8
 }
 
 const (

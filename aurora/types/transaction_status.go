@@ -2,8 +2,10 @@ package types
 
 import "github.com/near/borsh-go"
 
+// TransactionStatusEnum enumerates transaction statuses
 type TransactionStatusEnum borsh.Enum
 
+// Existing transaction statuses
 const (
 	SuccessStatus TransactionStatusEnum = iota
 	RevertStatus

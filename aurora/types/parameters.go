@@ -12,7 +12,7 @@ type BeginBlockArgs struct {
 
 // BeginChainArgs contains parameters for the `begin_chain` method
 type BeginChainArgs struct {
-	ChainId      RawU256
+	ChainID      RawU256
 	GenesisAlloc []AccountBalance
 }
 
@@ -22,8 +22,8 @@ type FunctionCallArgs struct {
 	Input    []uint8
 }
 
-// GetChainIdArgs contains parameters for the `get_chain_id` method
-type GetChainIdArgs struct {
+// GetChainIDArgs contains parameters for the `get_chain_id` method
+type GetChainIDArgs struct {
 }
 
 // GetStorageAtArgs contains parameters for the `get_storage_at` method
@@ -47,15 +47,15 @@ type MetaCallArgs struct {
 
 // NewCallArgs contains parameters for the `new` method
 type NewCallArgs struct {
-	ChainId            RawU256
-	OwnerId            AccountId
-	BridgeProverId     AccountId
+	ChainID            RawU256
+	OwnerID            AccountID
+	BridgeProverID     AccountID
 	UpgradeDelayBlocks uint64
 }
 
 // InitCallArgs contains parameters for the `new_eth_connector` method
 type InitCallArgs struct {
-	ProverAccount       AccountId
+	ProverAccount       AccountID
 	EthCustodianAddress string
 	Metadata            FungibleTokenMetadata
 }

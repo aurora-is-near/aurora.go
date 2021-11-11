@@ -9,8 +9,8 @@ type RawU256 [32]uint8
 // RawH256 is an unformatted binary data of fixed length
 type RawH256 [32]uint8
 
-// AccountId is a string
-type AccountId string
+// AccountID is a string
+type AccountID string
 
 // AccountBalance is a pair address:balance
 type AccountBalance struct {
