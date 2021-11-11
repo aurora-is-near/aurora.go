@@ -1,0 +1,22 @@
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+name: Tests
+jobs:
+  build:
+    name: Build
+    runs-on: [self-hosted, light]
+    steps:
+      - name: Clone the repository
+        uses: actions/checkout@v2
+      - run: make build
+  test:
+    name: Go tests/lints
+    runs-on: [self-hosted, light]
+    steps:
+      - name: Clone the repository
+        uses: actions/checkout@v2
+      - run: make test
